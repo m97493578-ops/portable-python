@@ -1,6 +1,6 @@
-
-<!-- 🌓 PocketPython Core UI Engine (Dark Mode + Footer Remover + Gravity Easter Egg) -->
+<!-- 🌓 PocketPython Core UI Engine (Favicon + Dark Mode + Footer Remover + Gravity Easter Egg) -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2272%%22 font-size=%2265%22 font-family=%22sans-serif%22 font-weight=%22900%22 fill=%22%2339d353%22 text-anchor=%22middle%22>P</text></svg>">
+
 <div style="text-align: right; margin: 15px 0;">
   <button id="theme-toggle-btn" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease;">🌙 Dark Mode</button>
 </div>
@@ -156,7 +156,6 @@
     });
   }
 </script>
-
 
 A portable, zero-installation Python development environment.
 
