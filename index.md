@@ -114,18 +114,82 @@ This project is open-source software licensed under the **MIT License**. Feel fr
 
 
 
-<!-- 🤫 Secret Keyboard Sequence Tracker -->
+<!-- 🪐 PocketPython Gravity Physics Easter Egg -->
 <script>
-  let keysPressed = "";
+  let secretKeyBuffer = "";
+  
+  // Real-time keyboard sequence listener
   document.addEventListener("keydown", (e) => {
-    keysPressed += e.key.toLowerCase();
-    if (keysPressed.length > 6) {
-      keysPressed = keysPressed.slice(-6);
+    secretKeyBuffer += e.key.toLowerCase();
+    if (secretKeyBuffer.length > 6) {
+      secretKeyBuffer = secretKeyBuffer.slice(-6);
     }
-    if (keysPressed === "python") {
-      alert("🐍 Secret Unlocked: 'Import gravity! PocketPython leaves zero traces behind!'");
-      keysPressed = "";
+    if (secretKeyBuffer === "python") {
+      activateWebpageGravity();
+      secretKeyBuffer = "";
     }
   });
-</script>
 
+  function activateWebpageGravity() {
+    // Select text targets to collapse
+    const components = document.querySelectorAll('h1, h2, h3, h4, p, li, a, hr');
+    const itemsArray = [];
+
+    components.forEach((element) => {
+      if (element.id === 'theme-toggle-btn') return;
+      
+      // Force individual inline styling behaviors 
+      element.style.position = 'relative';
+      element.style.display = 'inline-block';
+      element.style.transformOrigin = 'center';
+      element.style.transition = 'none';
+
+      itemsArray.push({
+        domNode: element,
+        posY: 0,
+        posX: 0,
+        velY: 1 + Math.random() * 2,
+        velX: (Math.random() - 0.5) * 4,
+        degRot: 0,
+        velRot: (Math.random() - 0.5) * 6,
+        bounceCount: 0
+      });
+    });
+
+    const gravityForce = 0.35;
+    const bounceAbsorption = -0.55;
+
+    function runPhysicsLoop() {
+      const windowFloor = window.innerHeight;
+
+      itemsArray.forEach((item) => {
+        const bounds = item.domNode.getBoundingClientRect();
+        
+        // Standard physics engine math adjustments
+        item.velY += gravityForce;
+        item.posY += item.velY;
+        item.posX += item.velX;
+        item.degRot += item.velRot;
+
+        // Viewport floor collision tracking
+        if (bounds.bottom + item.velY > windowFloor) {
+          if (item.bounceCount < 3) {
+            item.velY *= bounceAbsorption;
+            item.bounceCount++;
+          } else {
+            item.velY = 0;
+            item.velX = 0;
+            item.velRot = 0;
+          }
+        }
+
+        // Apply real-time hardware transformation matrix
+        item.domNode.style.transform = `translate(${item.posX}px, ${item.posY}px) rotate(${item.degRot}deg)`;
+      });
+
+      requestAnimationFrame(runPhysicsLoop);
+    }
+
+    requestAnimationFrame(runPhysicsLoop);
+  }
+</script>
