@@ -2,7 +2,7 @@
 permalink: /
 ---
 
-# Portable Python
+# PocketPython
 
 ⚠️ **Notice:** This project exclusively supports **Python 3.14.5 and up**. 
 
