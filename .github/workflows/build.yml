@@ -1,0 +1,18 @@
+name: Build Full Portable Python
+on: [workflow_dispatch]
+
+jobs:
+  extract:
+    runs-on: windows-latest
+    steps:
+    - name: Download Full Official Installer
+      run: Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.14.5/python-3.14.5-amd64.exe" -OutFile "installer.exe"
+
+    - name: Unpack Full Core Layout (Lib, Scripts, Tcl)
+      run: .\installer.exe /quiet TargetDir="${{ github.workspace }}\python-core" Shortcuts=0 Include_launcher=0 PrependPath=0
+
+    - name: Package Everything Into Clean ZIP
+      uses: actions/upload-artifact@v4
+      with:
+        name: full-portable-python-3.14.5
+        path: ${{ github.workspace }}\python-core
