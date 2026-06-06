@@ -111,3 +111,21 @@ A portable, zero-installation Python development environment.
 ## ⚖️ License
 
 This project is open-source software licensed under the **MIT License**. Feel free to use, modify, and distribute it.
+
+
+
+<!-- 🤫 Secret Keyboard Sequence Tracker -->
+<script>
+  let keysPressed = "";
+  document.addEventListener("keydown", (e) => {
+    keysPressed += e.key.toLowerCase();
+    if (keysPressed.length > 6) {
+      keysPressed = keysPressed.slice(-6);
+    }
+    if (keysPressed === "python") {
+      alert("🐍 Secret Unlocked: 'Import gravity! PocketPython leaves zero traces behind!'");
+      keysPressed = "";
+    }
+  });
+</script>
+
