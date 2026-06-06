@@ -9,7 +9,7 @@ jobs:
       run: Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.14.5/python-3.14.5-amd64.exe" -OutFile "installer.exe"
 
     - name: Unpack Full Core Layout (Lib, Scripts, Tcl)
-      run: .\installer.exe /quiet TargetDir="${{ github.workspace }}\python-core" Shortcuts=0 Include_launcher=0 PrependPath=0
+      run: .\installer.exe /quiet TargetDir="${{ github.workspace }}\python-core" Shortcuts=0 Include_launcher=0 PrependPath=0 Include_lib=1 Include_pip=1 Include_tcltk=1 InstallAllUsers=0
 
     - name: Package Everything Into Clean ZIP
       uses: actions/upload-artifact@v4
