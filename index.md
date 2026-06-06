@@ -1,4 +1,4 @@
-# 🐍 PocketPython
+
 
 A portable, zero-installation Python development environment.
 
