@@ -8,5 +8,5 @@ permalink: /
 
 Choose the best download option below:
 
-* 📦 **[Download Standard Archive (ZIP)](https://github.com/m97493578-ops/portable-python/releases)** — Best for restricted school PCs.
-* 🚀 **[Download Self-Extractor (EXE SFX)](https://github.com/m97493578-ops/portable-python/releases)** — Unpacks automatically without unzipping tools.
+* 📦 **[Download Standard Archive (ZIP)](https://github.com/m97493578-ops/PocketPython/releases)** — Best for restricted school PCs.
+* 🚀 **[Download Self-Extractor (EXE SFX)](https://github.com/m97493578-ops/PocketPython/releases)** — Unpacks automatically without unzipping tools.
