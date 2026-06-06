@@ -1,6 +1,4 @@
-<!-- 🌓 PocketPython Core UI Engine (Favicon + Dark Mode + Footer Remover + Gravity Easter Egg) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2272%%22 font-size=%2265%22 font-family=%22sans-serif%22 font-weight=%22900%22 fill=%22%2339d353%22 text-anchor=%22middle%22>P</text></svg>">
-
+<!-- 🌓 PocketPython Master UI Engine (Auto-Favicon + Dark Mode + Footer Remover + Gravity) -->
 <div style="text-align: right; margin: 15px 0;">
   <button id="theme-toggle-btn" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease;">🌙 Dark Mode</button>
 </div>
@@ -45,7 +43,18 @@
 
 <script>
   // ==========================================
-  // 1. DARK MODE TOGGLE LOGIC
+  // 1. FORCED RUNTIME FAVICON INJECTION LOGIC
+  // ==========================================
+  (function() {
+    const faviconElement = document.createElement('link');
+    faviconElement.rel = 'icon';
+    faviconElement.type = 'image/svg+xml';
+    faviconElement.href = "data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23161b22'/><text x='50%' y='72%' font-size='65' font-family='sans-serif' font-weight='900' fill='%2339d353' text-anchor='middle'>P</text></svg>";
+    document.getElementsByTagName('head')[0].appendChild(faviconElement);
+  })();
+
+  // ==========================================
+  // 2. DARK MODE TOGGLE LOGIC
   // ==========================================
   const themeButton = document.getElementById('theme-toggle-btn');
   const userSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -64,7 +73,7 @@
   });
 
   // ==========================================
-  // 2. GRAVITY PHYSICS ENGINE LOGIC
+  // 3. GRAVITY PHYSICS ENGINE LOGIC
   // ==========================================
   let secretKeyBuffer = "";
   let physicsActive = false;
@@ -156,6 +165,7 @@
     });
   }
 </script>
+
 
 A portable, zero-installation Python development environment.
 
