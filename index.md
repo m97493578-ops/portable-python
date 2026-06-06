@@ -42,16 +42,6 @@
 </style>
 
 <script>
-  // ==========================================
-  // 1. FORCED RUNTIME FAVICON INJECTION LOGIC
-  // ==========================================
-  (function() {
-    const faviconElement = document.createElement('link');
-    faviconElement.rel = 'icon';
-    faviconElement.type = 'image/svg+xml';
-    faviconElement.href = "data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23161b22'/><text x='50%' y='72%' font-size='65' font-family='sans-serif' font-weight='900' fill='%2339d353' text-anchor='middle'>P</text></svg>";
-    document.getElementsByTagName('head')[0].appendChild(faviconElement);
-  })();
 
   // ==========================================
   // 2. DARK MODE TOGGLE LOGIC
