@@ -5,7 +5,7 @@ favicons: 🐍
 
 # 🐍 PocketPython
 
-⚠️ **Notice:** This project exclusively supports **Python 3.14.5 and up**. 
+⚠️ **Notice:** This project exclusively supports **Python 3.14.0 and up**. 
 
 Choose the best download option below:
 
