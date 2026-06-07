@@ -206,6 +206,13 @@ A portable, zero-installation Python development environment.
 
 ---
 
+## 🎯 Project Philosophy
+
+PocketPython does not bundle heavy external IDEs, text editors, or bloated data science packages. It provides a raw, optimized CPython runtime distribution. This keeps package sizes small and allows you to use your preferred local environment.
+
+
+---
+
 ## ⚖️ License
 
 This project is open-source software licensed under the **MIT License**. Feel free to use, modify, and distribute it.
