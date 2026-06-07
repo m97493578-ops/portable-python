@@ -196,7 +196,7 @@ A portable, zero-installation Python development environment.
 **A:** No. PocketPython is completely portable and executes safely from user directories.
 
 #### Q: Why does this project only support Python 3.14.0 and up?
-**A:** It Is the latest verisions of Python and it makes development easy
+**A:** "It utilizes the latest Python versions to simplify development.
 
 #### Q: Can I run third-party libraries (like NumPy or Requests)?
 **A:** Yes. You can install packages locally using the built-in package manager included in the archive.
