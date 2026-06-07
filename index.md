@@ -213,6 +213,14 @@ PocketPython does not bundle heavy external IDEs, text editors, or bloated data 
 
 ---
 
+## 🔨 Crafted by Hand
+
+PocketPython is proud to be **Handmade**. 
+
+Unlike bloated modern distributions that rely on massive automated scripts, this package is manually reviewed, stripped of unneeded files, and zipped directly by the developer. You get exactly what you expect: a pure, lightweight Python runtime with zero hidden automation or digital clutter.
+
+---
+
 ## ⚖️ License
 
 This project is open-source software licensed under the **MIT License**. Feel free to use, modify, and distribute it.
