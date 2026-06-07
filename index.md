@@ -229,9 +229,3 @@ This project is open-source software licensed under the **MIT License**. Feel fr
 
 ℹ️ **Legal Notice:** "Python" is a registered trademark of the Python Software Foundation (PSF). PocketPython is an independent project. It is not affiliated with, endorsed by, or sponsored by the PSF.
 
-<details>
-<summary>🔮 Warning: Do not type "python" too fast...</summary>
-
-We warned you. Gravity turns on. Everything collapses.
-</details>
-
