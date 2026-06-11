@@ -161,12 +161,10 @@ A portable, zero-installation Python development environment.
 
 ⚠️ **Notice:** This project exclusively supports **Python 3.14.0+**.
 
----
+## 💻 Looking for a Full IDE?
 
-## 🐍 Need Python Too?
-
-Looking for a lightweight, portable core environment without an IDE interface? Check out our sister project:
-* **[PocketPyCharm Project Website](https://m97493578-ops.github.io/PocketPyCharm/)** — Features individual zero-install packages tailored exclusively for running scripts inside school and workspace drives.
+Need an advanced development environment with a built-in code editor? Check out our companion project:
+* **[PocketPyCharm Website](https://m97493578-ops.github.io/PocketPyCharm/)** — A complete, zero-installation PyCharm IDE workspace pre-configured for restricted school and work environments.
 
 ---
 
