@@ -163,6 +163,13 @@ A portable, zero-installation Python development environment.
 
 ---
 
+## 🐍 Need Python Too?
+
+Looking for a lightweight, portable core environment without an IDE interface? Check out our sister project:
+* **[PocketPyCharm Project Website](https://m97493578-ops.github.io/PocketPyCharm/)** — Features individual zero-install packages tailored exclusively for running scripts inside school and workspace drives.
+
+---
+
 ### 📥 Available Packages
 
 * 📦 **[Download Standard Archive (ZIP)](https://github.com/m97493578-ops/PocketPython/releases/)**
