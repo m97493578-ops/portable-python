@@ -1,6 +1,6 @@
 <!-- 🌓 PocketPython Master UI Engine (Auto-Favicon + Dark Mode + Footer Remover + Gravity) -->
-<div style="text-align: right; margin: 15px 0;">
-  <button id="theme-toggle-btn" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease;">🌙 Dark Mode</button>
+<div class="theme-wrapper" style="width: 100%; display: block !important; text-align: right; margin: 20px 0; position: relative; z-index: 99999 !important;">
+  <button id="theme-toggle-btn" style="display: inline-block !important; visibility: visible !important; opacity: 1 !important; padding: 10px 20px; border-radius: 20px; border: 1px solid #ccc; background: #ffffff; color: #24292e; cursor: pointer; font-weight: bold; font-family: sans-serif; transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">🌙 Dark Mode</button>
 </div>
 
 <style>
@@ -39,10 +39,49 @@
     color: #f0f6fc !important;
     border-color: #30363d !important;
   }
+
+  /* ========================================== */ 
+  /* 🔥 FORCED AGGRESSIVE BUTTON OVERRIDES      */ 
+  /* ========================================== */ 
+  div.btn-container { 
+    margin: 20px 0 !important; 
+    display: flex !important; 
+    flex-direction: column !important; 
+    gap: 12px !important; 
+    max-width: 320px !important; 
+  } 
+  div.btn-container a { 
+    display: block !important; 
+    padding: 14px 20px !important; 
+    background-color: #24292e !important; /* GitHub Charcoal Gray */
+    color: #ffffff !important; 
+    text-decoration: none !important; 
+    font-weight: bold !important; 
+    border-radius: 6px !important; 
+    border: 1px solid #444c56 !important; 
+    text-align: center !important; 
+    transition: all 0.2s ease-in-out !important; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12) !important; 
+  } 
+  div.btn-container a:hover { 
+    background-color: #2c3137 !important; 
+    transform: translateY(-2px) !important; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2) !important; 
+  } 
+  div.site-container a { 
+    background-color: #1f6feb !important; /* Vibrant Blue */
+    border-color: #388bfd !important; 
+  } 
+  div.site-container a:hover { 
+    background-color: #388bfd !important; 
+  } 
+  body.dark-mode-active div.btn-container a { 
+    color: #ffffff !important; 
+  } 
 </style>
 
 <script>
-
   // ==========================================
   // 2. DARK MODE TOGGLE LOGIC
   // ==========================================
@@ -156,6 +195,7 @@
   }
 </script>
 
+# PocketPython
 
 A portable, zero-installation Python development environment.
 
@@ -164,18 +204,26 @@ A portable, zero-installation Python development environment.
 ## 💻 Looking for a Full IDE?
 
 Need an advanced development environment with a built-in code editor? Check out our companion project:
-* **[PocketPyCharm Website](https://m97493578-ops.github.io/PocketPyCharm/)** — A complete, zero-installation PyCharm IDE workspace pre-configured for restricted school and work environments.
+
+<div class="btn-container site-container">
+  <a href="https://m97493578-ops.github.io/PocketPyCharm/">💻 PocketPyCharm Website</a>
+</div>
+
+* A complete, zero-installation PyCharm IDE workspace pre-configured for restricted school and work environments.
 
 ---
 
 ### 📥 Available Packages
 
-* 📦 **[Download Standard Archive (ZIP)](https://github.com/m97493578-ops/PocketPython/releases/)**
-  * Optimized for restricted school environments.
-  * Requires manual folder extraction.
-* 🚀 **[Download Self-Extractor (EXE SFX)](https://github.com/m97493578-ops/PocketPython/releases/)**
-  * Automatically unpacks without third-party tools.
-  * Ideal for quick local deployments.
+<div class="btn-container">
+  <a href="https://github.com/m97493578-ops/PocketPython/releases/">📦 Download Standard Archive (ZIP)</a>
+</div>
+* Optimized for restricted school environments. Requires manual folder extraction.
+
+<div class="btn-container site-container">
+  <a href="https://github.com/m97493578-ops/PocketPython/releases/">🚀 Download Self-Extractor (EXE SFX)</a>
+</div>
+* Automatically unpacks without third-party tools. Ideal for quick local deployments.
 
 ---
 
@@ -189,7 +237,10 @@ Need an advanced development environment with a built-in code editor? Check out 
 
 ## 🚀 Quick Start Guide
 
-1. Download the latest version from the **[Releases Page](https://github.com/m97493578-ops/PocketPython/releases/)**.
+1. Open our deployment releases workspace using the button below:
+<div class="btn-container">
+  <a href="https://github.com/m97493578-ops/PocketPython/releases/">🚀 Open Releases Page</a>
+</div>
 2. Unpack or extract the file into your local folder (e.g., Documents or USB).
 3. Open the folder and run `python.exe` to start coding.
 
@@ -215,7 +266,6 @@ Need an advanced development environment with a built-in code editor? Check out 
 
 PocketPython does not bundle heavy external IDEs, text editors, or bloated data science packages. It provides a raw, optimized CPython runtime distribution. This keeps package sizes small and allows you to use your preferred local environment.
 
-
 ---
 
 ## 🔨 Crafted by Hand
@@ -233,4 +283,3 @@ This project is open-source software licensed under the **MIT License**. Feel fr
 ---
 
 ℹ️ **Legal Notice:** "Python" is a registered trademark of the Python Software Foundation (PSF). PocketPython is an independent project. It is not affiliated with, endorsed by, or sponsored by the PSF.
-
